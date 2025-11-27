@@ -1,0 +1,130 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("batik3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding-top: 35px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.about-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    background-color: rgb(255, 234, 208);
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.about-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* TEKS */
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #fdb035;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* INFO BOX */
+.about-info {
+    margin-top: 15px;
+    background: #ecf1f4;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border-left: 5px solid #fdb035;
+}
+
+.about-info p {
+    margin: 5px 0;
+}
+
+.about-info a {
+    color: #fdb035;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-info a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+
+    background: #b7bcbe;
+    color: #eff2f2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+.back-home {
+    display: inline-block;
+    background: #e7e5e4; 
+    color: #1c1c1c;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transition: 0.2s ease;
+    bottom: 20px;
+}
+
+.back-home:hover {
+    background: #b0aead;
+    transform: translateY(-2px);
+}
